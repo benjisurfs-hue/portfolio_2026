@@ -131,3 +131,64 @@ h1,h2,h3,h4,h5,h6,.project-deck{font-family:"PT Sans",sans-serif}h1 em{font-fami
 /* Timeline demo enlarged by two-thirds, keeping its lower-right alignment. */
 .timeline-demo-stage>video{left:55.33%;top:12%;width:41.67%}
 .timeline-demo-stage>.video-preview-play{left:76.165%;top:53.1%}
+
+/* Homepage project cards matching the supplied references. */
+.work .reference-project{container-type:inline-size;padding:0;border-radius:0;background-size:cover;background-position:center;color:#fff;overflow:hidden}
+.reference-soventure{background-image:url("assets/home/soventure-card-background.png")}
+.reference-firstthought{background-image:url("assets/home/firstthought-card-background.png")}
+.reference-cureatr{background-image:url("assets/home/cureatr-card-background.png")}
+.reference-card-content{padding:7.2cqw 7.68cqw 8cqw}
+.reference-card-meta{display:flex;align-items:baseline;gap:2.7cqw;font-size:clamp(12px,1.68cqw,20px);line-height:1.5;margin-bottom:3.7cqw}
+.reference-card-meta p{margin:0}.reference-card-category{margin-left:auto;text-align:right}
+.reference-card-grid{display:grid;grid-template-columns:1.49fr 1fr;gap:7.68cqw;align-items:start}
+.reference-card-visual h3{font-size:clamp(16px,2.04cqw,25px);font-weight:400;margin:0 0 1.45cqw}
+.reference-screen-link{display:block}.reference-screen-link img{width:100%;height:auto;display:block;border:1px solid white}
+.reference-card-visual .project-deck{font-size:clamp(28px,4.32cqw,54px);line-height:1.15;letter-spacing:-.04em;margin:3.7cqw 0 0;font-weight:400}
+.reference-card-description>p{font-size:clamp(16px,2.04cqw,25px);line-height:1.36;margin:0 0 3cqw}
+.reference-card-description .text-link{font-size:clamp(14px,1.68cqw,20px);gap:4.5cqw;padding-bottom:9px}
+.reference-card-description .text-link span{display:grid;place-items:center;width:22px;height:22px;border-radius:3px;background:#89aabe;color:white;font-size:22px;font-weight:bold}
+.reference-cureatr .reference-screen-link{display:flex;justify-content:center;padding-top:.4cqw}
+.reference-cureatr .reference-screen-link img{width:31.85%;border:0}
+.reference-cureatr .project-deck{width:115%}
+@media(max-width:760px){.reference-card-content{padding:28px 24px 36px}.reference-card-meta{flex-wrap:wrap;gap:8px 16px;font-size:12px;margin-bottom:24px}.reference-card-category{flex-basis:100%;margin-left:0;text-align:left}.reference-card-grid{grid-template-columns:1fr;gap:28px}.reference-card-visual h3{margin-bottom:12px}.reference-card-visual .project-deck{font-size:32px;margin-top:24px}.reference-card-description>p{font-size:17px;line-height:1.5;margin-bottom:22px}.reference-card-description .text-link{font-size:14px;gap:36px}.reference-cureatr .project-deck{width:100%}.reference-cureatr .reference-screen-link img{width:122px;max-width:40%}}
+
+/* Stretch the project link across its card; keep the supplied arrow text-sized. */
+.work .reference-project{position:relative;background-color:#626778}
+.reference-card-description .text-link{position:static}
+.reference-card-description .text-link:after{content:'';position:absolute;inset:0;z-index:2}
+.reference-card-description .text-link .project-arrow-icon{display:block;width:1em;height:1em;border:0;flex-shrink:0}
+.work .reference-project:hover,.work .reference-project:focus-within{background-image:none}
+.reference-project:has(.text-link:focus-visible){outline:3px solid var(--blue);outline-offset:4px}
+.reference-project .text-link:hover{opacity:1}
+
+/* Fade the background layer while leaving card content unchanged. */
+.work .reference-project{background-image:none;isolation:isolate}
+.reference-project:before{content:'';position:absolute;inset:0;z-index:-1;background-size:cover;background-position:center;opacity:1;transition:opacity 280ms ease}
+.reference-soventure:before{background-image:url("assets/home/soventure-card-background.png")}
+.reference-firstthought:before{background-image:url("assets/home/firstthought-card-background.png")}
+.reference-cureatr:before{background-image:url("assets/home/cureatr-card-background.png")}
+.reference-project:hover:before,.reference-project:focus-within:before{opacity:0}
+@media(prefers-reduced-motion:reduce){.reference-project:before{transition:none}}
+
+/* Reveal the background on hover or keyboard focus. */
+.reference-project:before{opacity:0}
+.reference-project:hover:before,.reference-project:focus-within:before{opacity:1}
+
+/* Tighten spacing before the competitive comparison image. */
+.competitive-comparison-copy+figure{margin-top:0}
+
+.experience-years{font-family:"Reddit Mono",monospace;font-size:13px;font-weight:400;color:var(--muted);margin-left:14px;white-space:nowrap}.about .experience-byline{font-size:14px;line-height:1.7;color:var(--muted);margin-top:24px}
+
+/* Personal About section with circular media. */
+.personal-about{display:grid;grid-template-columns:1fr 1.7fr;gap:60px;padding:34px 0 76px;align-items:start}
+.personal-about>.eyebrow{margin-top:8px}
+.personal-about-content{min-width:0}
+.personal-about-content h2{font-size:clamp(32px,3.6vw,56px);font-weight:400;line-height:1.2;letter-spacing:-.035em;margin:0;border-bottom:1px solid var(--line);padding-bottom:10px}
+.personal-about-media{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px;margin-top:30px}
+.personal-about-circle{display:block;width:100%;height:auto;aspect-ratio:1;border-radius:50%;object-fit:cover;overflow:hidden}
+.surf-circle{object-position:34% center}.cook-circle{object-position:center}.snow-circle{background:#e8eaf2;object-position:center}
+@media(max-width:760px){.personal-about{grid-template-columns:1fr;gap:20px;padding:24px 0 50px}.personal-about>.eyebrow{margin:0}.personal-about-content h2{font-size:32px}.personal-about-media{gap:14px;margin-top:24px}}
+
+/* Match the earlier-work column alignment. */
+.personal-about{grid-template-columns:1fr 2fr}
+@media(max-width:760px){.personal-about{grid-template-columns:1fr}}
