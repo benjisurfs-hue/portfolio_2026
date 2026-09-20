@@ -192,3 +192,25 @@ h1,h2,h3,h4,h5,h6,.project-deck{font-family:"Varela Round",sans-serif}h1 em{font
 /* Match the earlier-work column alignment. */
 .personal-about{grid-template-columns:1fr 2fr}
 @media(max-width:760px){.personal-about{grid-template-columns:1fr}}
+
+/* FirstThought product walkthrough */
+.ft-walkthrough{margin-top:38px;border-block:1px solid var(--line);min-width:0}
+.ft-walkthrough-top{display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:var(--muted)}
+.ft-walkthrough-count{font-family:"Reddit Mono",monospace;color:var(--blue)}
+.ft-walkthrough-slide{margin:0;min-width:0}
+.ft-walkthrough-slide[hidden]{display:none}
+.ft-walkthrough-slide>img{display:block;width:100%;height:auto;border:1px solid var(--line);background:#edf0f8}
+.ft-walkthrough-slide figcaption{padding:24px 0 12px}
+.case-content .ft-walkthrough-slide h3{font-size:25px;letter-spacing:-.025em;font-weight:500;margin:0 0 9px}
+.ft-walkthrough-slide figcaption p{font-size:16px;line-height:1.7;color:var(--muted);margin:0;max-width:720px}
+.ft-walkthrough-controls{display:flex;justify-content:space-between;gap:16px;padding:18px 0 24px}
+.ft-walkthrough-controls button{font:inherit;font-size:14px;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:30px;min-height:44px;padding:10px 20px;cursor:pointer}
+.ft-walkthrough-controls button:hover:not(:disabled){border-color:var(--blue);color:var(--blue)}
+.ft-walkthrough-controls button:disabled{opacity:.4;cursor:default}
+.ft-walkthrough button:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.ft-walkthrough-steps{display:flex;gap:12px;overflow-x:auto;overscroll-behavior-inline:contain;scrollbar-width:thin;padding:0 0 20px;max-width:100%}
+.ft-walkthrough-steps button{flex:0 0 116px;min-width:0;text-align:left;padding:0 0 10px;border:0;border-bottom:2px solid var(--line);background:transparent;color:var(--muted);font:inherit;font-size:12px;line-height:1.4;cursor:pointer}
+.ft-walkthrough-steps button[aria-current="step"]{border-color:var(--blue);color:var(--blue)}
+.ft-walkthrough-steps img{display:block;width:100%;height:72px;object-fit:contain;background:#edf0f8;border:1px solid var(--line);margin-bottom:9px}
+.ft-walkthrough-steps button:hover{color:var(--blue)}
+@media(max-width:760px){.ft-walkthrough{margin-top:28px}.ft-walkthrough-slide figcaption{padding-top:20px}.case-content .ft-walkthrough-slide h3{font-size:22px}.ft-walkthrough-slide figcaption p{font-size:15px}.ft-walkthrough-steps button{flex-basis:102px}.ft-walkthrough-steps img{height:64px}}
