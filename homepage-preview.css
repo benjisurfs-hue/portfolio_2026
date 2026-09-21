@@ -1,0 +1,15 @@
+/* Local homepage layout review based on Figma 107:4530. */
+.work .reference-card-grid { grid-template-columns: minmax(0, 1.49fr) minmax(0, 1fr); gap: 4.63cqw; }
+.work .reference-card-description { padding-top: 3.32cqw; min-width: 0; }
+.work .reference-card-description .project-deck { font-size: clamp(25px, 2.78cqw, 36px); line-height: 1.22; letter-spacing: -.028em; margin: 0 0 14px; max-width: none; }
+.work .reference-card-description > p:not(.project-deck) { font-size: clamp(17px, 1.93cqw, 25px); line-height: 1.36; }
+.work .reference-screen-link img { width: 100%; height: auto; object-fit: contain; border: 0; }
+.work .reference-cureatr .reference-screen-link img { width: 31.85%; height: auto; }
+@media (max-width: 760px) {
+  .work .reference-card-grid { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .work .reference-card-description { padding-top: 0; }
+  .work .reference-card-description .project-deck { font-size: 30px; }
+  .work .reference-card-description .project-deck br { display: none; }
+  .work .reference-card-description > p:not(.project-deck) { font-size: 17px; line-height: 1.5; }
+  .work .reference-cureatr .reference-screen-link img { width: 160px; max-width: 45%; }
+}
