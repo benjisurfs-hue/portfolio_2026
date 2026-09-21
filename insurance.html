@@ -30,7 +30,7 @@
     rel="stylesheet"
   >
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=soventure-journey">
 </head>
 
 <body class="case-page insurance-page">
@@ -366,28 +366,30 @@ View full size ↗
           customers could make progress while quotes loaded.
         </p>
 
-        <figure class="case-evidence supplied-media">
+        <section class="soventure-journey" aria-labelledby="soventure-journey-heading">
+          <p class="eyebrow">Product journey</p>
+          <h2 id="soventure-journey-heading">From trip details<br>to protected travel.</h2>
+          <p class="standalone">Follow the purchase journey from understanding the offer through entering trip details, comparing plans, and completing checkout.</p>
 
-          <a
-            href="assets/soventure/product-screens.png?v=group2"
-            target="_blank"
-            rel="noopener"
-          >
-            <img
-              src="assets/soventure/product-screens.png?v=group2"
-              loading="lazy"
-              alt="Soventure product journey: homepage, quote form, results, comparison, and plan details."
-              width="1855"
-              height="990"
-            >
-          </a>
-
-          <figcaption>
-            Soventure product journey: homepage, quote form, results,
-            comparison, and purchase page
-          </figcaption>
-
-        </figure>
+          <div class="ft-walkthrough" aria-label="Soventure product journey">
+            <div class="ft-walkthrough-top"><span class="ft-walkthrough-count" aria-live="polite">01 / 05</span><span class="ft-walkthrough-stage">Orient</span></div>
+            <div class="ft-walkthrough-slides">
+              <figure class="ft-walkthrough-slide" data-stage="Orient"><img src="assets/soventure/journey-homepage.png" alt="Soventure homepage introducing travel protection plans" width="340" height="990"><figcaption><h3>Homepage</h3><p>The homepage introduces the product, establishes trust, and gives travelers a clear route into the quote journey.</p></figcaption></figure>
+              <figure class="ft-walkthrough-slide" data-stage="Quote" hidden><img src="assets/soventure/journey-quote-form.png" alt="Soventure quote form collecting destination, dates, traveler, and trip cost information" width="2730" height="1990" loading="lazy"><figcaption><h3>Quote form</h3><p>A focused form gathers the trip and traveler details needed to return relevant coverage options.</p></figcaption></figure>
+              <figure class="ft-walkthrough-slide" data-stage="Evaluate" hidden><img src="assets/soventure/journey-results.png" alt="Soventure quote results with filters and travel insurance plan cards" width="2730" height="4072" loading="lazy"><figcaption><h3>Quote results</h3><p>Travelers can filter plans, scan key coverage limits, and identify options that fit their priorities.</p></figcaption></figure>
+              <figure class="ft-walkthrough-slide" data-stage="Compare" hidden><img src="assets/soventure/journey-comparison.png" alt="Soventure side-by-side comparison of three travel insurance plans" width="2730" height="4056" loading="lazy"><figcaption><h3>Plan comparison</h3><p>A side-by-side view makes differences in price, coverage, and benefits easier to evaluate before selection.</p></figcaption></figure>
+              <figure class="ft-walkthrough-slide" data-stage="Purchase" hidden><img src="assets/soventure/journey-purchase.png" alt="Soventure purchase page with traveler, payment, policy, and acknowledgement information" width="2730" height="3270" loading="lazy"><figcaption><h3>Purchase</h3><p>Checkout consolidates traveler and payment details while surfacing the return policy and required acknowledgement before purchase.</p></figcaption></figure>
+            </div>
+            <div class="ft-walkthrough-controls"><button class="ft-walkthrough-prev" type="button" disabled aria-label="Previous screen">← <span>Previous</span></button><button class="ft-walkthrough-next" type="button" aria-label="Next screen"><span>Next</span> →</button></div>
+            <nav class="ft-walkthrough-steps" aria-label="Journey screens">
+              <button type="button" aria-current="step" aria-label="Show screen 1: Homepage"><img src="assets/soventure/journey-homepage.png" alt="" loading="lazy"><span>01 Homepage</span></button>
+              <button type="button" aria-label="Show screen 2: Quote form"><img src="assets/soventure/journey-quote-form.png" alt="" loading="lazy"><span>02 Quote form</span></button>
+              <button type="button" aria-label="Show screen 3: Quote results"><img src="assets/soventure/journey-results.png" alt="" loading="lazy"><span>03 Results</span></button>
+              <button type="button" aria-label="Show screen 4: Plan comparison"><img src="assets/soventure/journey-comparison.png" alt="" loading="lazy"><span>04 Comparison</span></button>
+              <button type="button" aria-label="Show screen 5: Purchase"><img src="assets/soventure/journey-purchase.png" alt="" loading="lazy"><span>05 Purchase</span></button>
+            </nav>
+          </div>
+        </section>
 
       </div>
 
@@ -452,6 +454,7 @@ View full size ↗
   </footer>
 
   <script src="video-controls.js" defer></script>
+  <script src="soventure-walkthrough.js" defer></script>
 
 </body>
 
