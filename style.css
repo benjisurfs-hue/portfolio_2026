@@ -135,7 +135,7 @@ h1,h2,h3,h4,h5,h6,.project-deck{font-family:"Varela Round",sans-serif}h1 em{font
 /* Homepage project cards matching the supplied references. */
 .work .reference-project{container-type:inline-size;padding:0;border-radius:0;background-size:cover;background-position:center;color:#fff;overflow:hidden}
 .reference-soventure{background-image:url("assets/home/soventure-card-background.png")}
-.reference-firstthought{background-image:url("assets/home/firstthought-card-background.png")}
+.reference-firstthought{background-image:url("assets/firstthought/video-poster.png")}
 .reference-cureatr{background-image:url("assets/home/cureatr-card-background.png")}
 .reference-card-content{padding:7.2cqw 7.68cqw 8cqw}
 .reference-card-meta{display:flex;align-items:baseline;gap:2.7cqw;font-size:clamp(12px,1.68cqw,20px);line-height:1.5;margin-bottom:3.7cqw}
