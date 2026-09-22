@@ -220,3 +220,15 @@ h1,h2,h3,h4,h5,h6,.project-deck{font-family:"Varela Round",sans-serif}h1 em{font
 .soventure-journey .ft-walkthrough-slide>img{max-height:980px;object-fit:contain;object-position:center top}
 @media(max-width:760px){.soventure-journey{margin-top:38px;padding-top:32px}.soventure-journey .ft-walkthrough-slide>img{max-height:72vh}}
 @media(max-width:760px){.insurance-page .story-grid,.insurance-page .story-grid>*{min-width:0}.insurance-page .case-evidence{max-width:100%}.insurance-page .email-evidence{grid-template-columns:1fr;gap:18px}.insurance-page .email-evidence>a,.insurance-page .email-evidence>figcaption{grid-column:1}.insurance-page .email-evidence>a{grid-row:1}.insurance-page .email-evidence>figcaption{grid-row:2}}
+
+.cureatr-demo {
+    background: #fafbf9;
+}
+
+.cureatr-demo img {
+    display: block;
+    width: 17vw;
+    min-width: 275px;
+    height: auto;
+    margin: auto;
+}
