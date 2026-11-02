@@ -16,3 +16,6 @@
   .work .reference-card-description > p:not(.project-deck) { font-size: 17px; line-height: 1.5; }
   .work .reference-cureatr .reference-screen-link img { width: 160px; max-width: 45%; }
 }
+
+/* AI travel-insurance card: supplied image revealed on hover and keyboard focus. */
+.reference-ai-research:before{background-image:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url("assets/home/travel-insurance-ai-hover.webp");background-position:center;background-size:cover}

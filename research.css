@@ -82,3 +82,5 @@
 .study-measures>div{grid-template-columns:1fr;gap:8px;padding:20px 0}
 .study-measures{font-size:18px}
 }
+
+.research-page .shopping-concept{margin:0 0 64px}.shopping-concept>a{display:block}.shopping-concept img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:4px}.shopping-concept figcaption a{text-decoration:underline;text-underline-offset:3px}
