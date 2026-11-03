@@ -65,3 +65,5 @@ html:has(.conversation-image-dialog[open]){overflow:hidden}
 .comparison-essay .insurance-journey-context{margin:36px 0 0;padding:24px;background:#fff;border:1px solid var(--line);border-radius:6px}.insurance-journey-context img{display:block;width:100%;height:auto}.comparison-essay .insurance-journey-context figcaption{font:14px/1.6 'PT Sans',sans-serif;color:var(--muted);margin-top:20px}@media(max-width:600px){.comparison-essay .insurance-journey-context{padding:14px}}
 
 .comparison-essay .reflection-comparison{margin:36px 0 0}.reflection-comparison img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:6px}.comparison-essay .reflection-comparison figcaption{font:14px/1.6 'PT Sans',sans-serif;color:var(--muted);margin-top:16px;max-width:850px}
+
+.comparison-essay .preface-reaction{margin:30px 0 0;max-width:730px}.preface-reaction img{display:block;width:400px;max-width:100%;height:auto;border-radius:4px}
