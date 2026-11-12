@@ -1,8 +1,14 @@
 /* Restart animated demos from their first frame. */
 document.querySelectorAll('.motion-toggle').forEach(button => {
   const image = button.parentElement.querySelector('img');
+  const video = button.parentElement.querySelector('video');
   let restartCount = 0;
   button.addEventListener('click', () => {
+    if (video) {
+      video.currentTime = 0;
+      video.play().catch(() => {});
+      return;
+    }
     const source = new URL(image.dataset.motionSrc, document.baseURI);
     source.searchParams.set('restart', `${Date.now()}-${++restartCount}`);
     image.src = source.href;

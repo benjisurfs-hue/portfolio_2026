@@ -145,3 +145,8 @@
 .traverse-phone-frame::before{border-radius:12% 12% 0 0 / 50% 50% 0 0}
 /* Cover the original screen beneath the replacement to prevent white seams. */
 .traverse-phone-frame::before{left:7.8%;right:7.8%;top:3.2%;height:90.8%;background:#000;border-radius:8% / 4%}
+
+.hero-recording-phone{width:210px;flex:none}
+.hero-recording-phone video{display:block;position:absolute;left:8.65%;top:3.6%;width:82.7%;height:90.1%;object-fit:cover;border-radius:12% / 5%;background:#fafbf9}
+.hero-recording-phone::after{display:none}
+@media(max-width:760px){.hero-recording-phone{width:182px}}
