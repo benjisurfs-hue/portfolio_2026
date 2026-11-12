@@ -1,0 +1,25 @@
+/* Only loaded by the unpublished On the Traverse version-two case study. */
+.ai-search-workflow{grid-column:1/-1;min-width:0;margin:16px 0 32px;background:var(--paper);font-family:'Varela Round',Arial,sans-serif}
+.case-content .ai-search-workflow h4{font:400 14px/1.6 'Varela Round',Arial,sans-serif;letter-spacing:0;color:var(--muted);margin:0 0 28px}
+.ai-workflow-stages{list-style:none;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:32px;margin:0;padding:0 0 140px}
+.ai-workflow-stages>li{position:relative;min-width:0}
+.ai-stage{height:100%;min-height:132px;display:flex;align-items:center;justify-content:center;padding:16px 12px;border:1px dotted #8b9391;color:var(--ink);text-align:center;font-size:15px;line-height:1.5;background:var(--paper)}
+.ai-flow-arrow{position:absolute;left:calc(100% + 5px);top:50%;transform:translateY(-50%);font:26px/1 Arial,sans-serif;color:var(--blue)}
+.ai-unsupported{position:absolute;top:calc(100% + 36px);left:0;width:calc(300% + 64px)}
+.ai-branch-arrow{position:absolute;bottom:calc(100% + 4px);left:calc((100% - 64px)/6);transform:translateX(-50%);font:26px/1 Arial,sans-serif;color:var(--blue)}
+.ai-unsupported-box{display:flex;align-items:center;gap:16px;border:1px dotted #8b9391;padding:16px;color:var(--ink);font-size:14px;line-height:1.6}
+.ai-unsupported-box strong{font-weight:400}
+.ai-branch-inline-arrow{font:24px/1 Arial,sans-serif;color:var(--blue);flex-shrink:0}
+.story-grid .ai-search-workflow .ai-data-note{font:13px/1.6 'Varela Round',Arial,sans-serif;color:var(--muted);margin:0 0 22px;max-width:none}
+.ai-search-workflow figcaption{font:13px/1.6 'Varela Round',Arial,sans-serif;color:var(--muted);margin:0}
+@media(max-width:900px){
+ .ai-workflow-stages{grid-template-columns:1fr;gap:32px;padding-bottom:0;margin-bottom:28px}
+ .ai-stage{height:auto;min-height:76px;font-size:15px;padding:18px}
+ .ai-flow-arrow{left:50%;top:auto;bottom:-29px;transform:translateX(-50%) rotate(90deg)}
+ .ai-unsupported{position:relative;top:auto;left:auto;width:auto;margin:32px 0 8px 24px}
+ .ai-branch-arrow{left:24px}
+ .ai-unsupported-box{gap:12px;font-size:13px;padding:14px}
+ .ai-criteria-stage>.ai-flow-arrow{left:12px}
+ .case-content .ai-search-workflow h4{margin-bottom:24px}
+}
+@media(max-width:420px){.ai-unsupported-box{flex-wrap:wrap;gap:8px 12px}.ai-unsupported-box>span:last-child{flex-basis:100%}.ai-branch-inline-arrow{transform:rotate(90deg)}}

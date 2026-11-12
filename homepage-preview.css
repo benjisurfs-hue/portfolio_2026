@@ -4,18 +4,45 @@
 .work .reference-card-description .project-deck { font-size: clamp(25px, 2.78cqw, 36px); line-height: 1.22; letter-spacing: -.028em; margin: 0 0 14px; max-width: none; }
 .work .reference-card-description > p:not(.project-deck) { font-size: clamp(17px, 1.93cqw, 25px); line-height: 1.36; }
 .work .reference-screen-link img { width: 100%; height: auto; object-fit: contain; border: 0; }
-.work .reference-screen-link-ski img { margin: 0 auto; width: 244px; height: auto; object-fit: contain; border: 0; }
+.work .reference-screen-link-ski img,
+.work .reference-cureatr .reference-screen-link img { display: block; margin: 0 auto; width: 244px; max-width: 100%; height: auto; object-fit: contain; border: 0; }
 
 .reference-card-visual {margin: 0 auto;}
-.work .reference-cureatr .reference-screen-link img { width: 31.85%; height: auto; }
 @media (max-width: 760px) {
   .work .reference-card-grid { grid-template-columns: minmax(0, 1fr); gap: 28px; }
   .work .reference-card-description { padding-top: 0; }
   .work .reference-card-description .project-deck { font-size: 30px; }
   .work .reference-card-description .project-deck br { display: none; }
   .work .reference-card-description > p:not(.project-deck) { font-size: 17px; line-height: 1.5; }
-  .work .reference-cureatr .reference-screen-link img { width: 160px; max-width: 45%; }
 }
 
 /* AI travel-insurance card: supplied image revealed on hover and keyboard focus. */
 .reference-ai-research:before{background-image:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url("assets/home/travel-insurance-ai-hover.webp");background-position:center;background-size:cover}
+
+/* Figma Cureatr 7:1432, framed by the existing homepage iPhone. */
+.cureatr-home-phone{display:block;position:relative;width:244px;flex:none;line-height:normal;text-align:left}
+.work .reference-cureatr .cureatr-phone-shell{display:block;width:100%;height:auto}
+.cureatr-timeline-window{position:absolute;left:8.65%;right:8.65%;top:8.9%;bottom:12.3%;overflow:hidden;background:#fff}
+.cureatr-timeline-canvas{display:block;width:390px;transform:scale(.5174);transform-origin:top left;background:#fff;color:#212121;font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;font-size:15px;line-height:normal;isolation:isolate}
+.ct-months{display:flex;justify-content:space-between;align-items:center;height:22px;padding:4px 5px;background:#f2f2f7;color:#6d6d72;font-size:10px;font-weight:700}
+.ct-rows{display:block;position:relative}
+.ct-category{border-top:1px solid #f2f2f7;padding:3px 5px;font-size:10px;font-weight:700;color:#9b9b9b;text-transform:uppercase}
+.ct-medication{padding:8px 10px 8px 0;--med-color:#2563eb}
+.ct-medication strong{display:block;padding-left:10px;font-size:15px;font-weight:700;margin-bottom:8px}
+.ct-dose{display:flex;position:relative;gap:8px;height:30px}
+.ct-bar{display:block;height:15px;background:var(--med-color);border-radius:0 6px 6px 0;position:relative;flex:1}
+.ct-bar small{position:absolute;right:0;top:17px;font-size:11px;line-height:13px;font-weight:700;color:#000;white-space:nowrap}
+.ct-dose.short{width:92px}
+.ct-dose.split .ct-bar{position:absolute;width:23%;border-radius:6px}
+.ct-dose.split .ct-bar:first-child{left:28%}
+.ct-dose.split .ct-bar:last-child{right:0}
+.ct-dose.gaps{width:308px;justify-content:space-between}
+.ct-dose.gaps .ct-bar{flex:none;width:31%;border-radius:6px}
+.ct-medication.opioid{--med-color:#c94c67}
+.ct-medication.metabolic{--med-color:#7c3aed}
+.ct-medication.gastro{--med-color:#16803c}
+.ct-medication.pain{--med-color:#d97706}
+.work .reference-cureatr .reference-screen-link .ct-grid{position:absolute;left:33px;top:-20px;width:331px;height:689px;max-width:none;margin:0;pointer-events:none;border:0;border-radius:0}
+
+.work .reference-card-meta{column-gap:16px;row-gap:8px}
+.project-meta-separator{flex:none}

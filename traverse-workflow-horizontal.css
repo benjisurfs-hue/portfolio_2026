@@ -1,0 +1,15 @@
+/* Main case-study workflow: preserve a left-to-right diagram at every size. */
+.ai-workflow-horizontal{margin:32px 0 0}
+.structured-case .ai-workflow-horizontal h4{font:400 14px/1.6 'Varela Round',Arial,sans-serif;letter-spacing:0;color:var(--muted);margin:0 0 28px}
+.ai-workflow-scroll{overflow-x:auto;max-width:100%;scrollbar-width:thin}
+.ai-workflow-scroll:focus-visible{outline:3px solid var(--blue);outline-offset:5px}
+.ai-workflow-horizontal .ai-workflow-stages{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:28px;min-width:850px;padding:0 0 140px;margin:0}
+.ai-workflow-horizontal .ai-stage{height:100%;min-height:132px;padding:16px 12px;font-size:14px}
+.ai-workflow-horizontal .ai-flow-arrow{left:calc(100% + 3px);top:50%;bottom:auto;transform:translateY(-50%)}
+.ai-workflow-horizontal .ai-unsupported{position:absolute;top:calc(100% + 36px);left:0;width:calc(300% + 56px);margin:0}
+.ai-workflow-horizontal .ai-branch-arrow{left:calc((100% - 56px)/6)}
+.ai-workflow-horizontal .ai-unsupported-box{flex-wrap:nowrap;font-size:13px;gap:12px;padding:14px}
+.ai-workflow-horizontal .ai-unsupported-box>span:last-child{flex-basis:auto}
+.ai-workflow-horizontal .ai-branch-inline-arrow{transform:none}
+.ai-workflow-horizontal .ai-data-note{font:13px/1.6 'Varela Round',Arial,sans-serif;color:var(--muted);margin:0 0 22px}
+@media(min-width:761px){.ai-workflow-horizontal{width:calc(100% + 212px);margin-left:-212px}}
