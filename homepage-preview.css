@@ -46,3 +46,41 @@
 
 .work .reference-card-meta{column-gap:16px;row-gap:8px}
 .project-meta-separator{flex:none}
+
+/* Homepage layout: Figma 133:1444. */
+.homepage-layout .wrap{width:min(1296px,calc(100% - 112px))}
+.homepage-layout .homepage-header{display:block;padding:38px 0;border-bottom:1px solid var(--line)}
+.homepage-topline{display:flex;align-items:baseline;justify-content:space-between;gap:20px}
+.homepage-topline .eyebrow{font-size:15px;font-weight:400;line-height:normal;margin:0}
+.homepage-topline nav{font-size:15px;gap:38px}
+.homepage-name{font:400 28px/1.2 'Varela Round',sans-serif;letter-spacing:-1.6px;margin:20px 0}
+.homepage-intro{font-size:22px;line-height:31.35px;color:var(--muted);max-width:1198px;margin:0}
+.homepage-layout .section-label{justify-content:flex-start;gap:50px;border-top:0;padding:24px 0}
+.homepage-layout .work .reference-project{background:#626778;border-radius:0;margin-bottom:24px}
+.homepage-layout .reference-project::before{display:none}
+.homepage-layout .reference-card-description .project-deck{width:100%}
+.homepage-layout .reference-card-visual{width:100%;min-width:0}
+.homepage-layout .reference-traverse .reference-card-visual,.homepage-layout .reference-cureatr .reference-card-visual{width:244px;max-width:100%}
+.homepage-layout .reference-card-meta{column-gap:16px;flex-wrap:wrap;row-gap:8px}
+.homepage-layout .project-meta-separator{margin:0}
+.homepage-layout .reference-card-description .text-link .project-arrow-icon{width:20px;height:20px}
+.homepage-layout .personal-about{display:grid;grid-template-columns:1fr 2fr;gap:60px;padding:34px 0 76px;margin:0 auto}
+.homepage-layout .personal-about>.eyebrow{padding-top:8px;font-size:13px}
+.homepage-layout .personal-about-content{min-width:0}
+.homepage-layout .personal-about h2{font-size:clamp(30px,3.6vw,50.688px);line-height:1.2;letter-spacing:-.035em;font-weight:400;border-bottom:1px solid var(--line);padding-bottom:10px;margin:0 0 30px}
+.homepage-layout .personal-about-media{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px}
+.homepage-layout .personal-about-circle{display:block;width:100%;height:auto;aspect-ratio:1;border-radius:50%;object-fit:cover;margin:0;max-width:none}
+@media(max-width:760px){
+ .homepage-layout .wrap{width:calc(100% - 40px)}
+ .homepage-layout .homepage-header{padding:28px 0}
+ .homepage-topline{align-items:start;flex-wrap:wrap;gap:16px}
+ .homepage-topline .eyebrow{font-size:12px}
+ .homepage-topline nav{font-size:13px;gap:20px;flex-wrap:wrap}
+ .homepage-name{margin:22px 0 18px}
+ .homepage-intro{font-size:18px;line-height:1.55}
+ .homepage-layout .reference-card-visual{width:100%}
+ .homepage-layout .reference-card-meta{font-size:12px;column-gap:12px}
+ .homepage-layout .personal-about{grid-template-columns:1fr;gap:16px;padding:34px 0 48px}
+ .homepage-layout .personal-about>.eyebrow{margin:0}
+ .homepage-layout .personal-about-media{gap:14px}
+}
