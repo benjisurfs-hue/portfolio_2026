@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Helping skiers find the right mountain for their trip — Benji Kim</title><meta name="description" content="The AI interprets the request. The catalog decides the answer. A product design case study by Benji Kim."><link rel="stylesheet" href="assets/traverse/fonts.css"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="case-study-layout.css"><link rel="stylesheet" href="onthetraverse-v2-workflow.css"><link rel="stylesheet" href="traverse-workflow-horizontal.css"><script src="case-study-layout.js" defer></script><link rel="stylesheet" href="image-modal.css"><link rel="stylesheet" href="traverse-evaluation.css">
+<script src="image-modal.js" defer></script>
+</head>
+
+<body class="case-layout traverse-case">
+<a class="skip" href="#summary">Skip to case study</a><header class="wrap"><a class="brand" href="index.html">benji kim</a><nav aria-label="Main navigation"><a href="index.html#work">Selected work</a><a href="resume.html">Resume ↗</a></nav>
+</header>
+
+<main id="top" class="structured-case">
+<p class="eyebrow">On the Traverse / Case study</p>
+<h1>Helping skiers find the right mountain for their trip</h1>
+<div class="case-hero case-hero-phone"><div class="traverse-phone-frame hero-recording-phone"><video autoplay playsinline muted loop preload="metadata" poster="assets/traverse/explore-demo-poster.jpg" aria-label="On the Traverse product demo"><source src="assets/traverse/explore-demo.mp4" type="video/mp4"></video></div><button class="motion-toggle" type="button">Restart demo</button></div><nav class="chapter-nav" aria-label="Case study sections"><a href="#summary">01 Summary</a><a href="#problem">02 Problem</a><a href="#learning">03 What we learned</a><a href="#decision">04 Key decision</a><a href="#design">05 Design</a><a href="#outcome">06 Outcome</a><a href="#reflection">07 Reflection</a></nav>
+<section id="summary" class="chapter" aria-labelledby="summary-heading">
+<h2 id="summary-heading" class="chapter-label">01 / Summary</h2>
+<div class="chapter-content"><p>Independent project · Pre-launch · Product design and development</p>
+<p>Next.js · TypeScript · Google Sheets · OpenAI. I owned the product, design, data structure, and implementation, with editorial help from a writer and journalist.</p>
+</div></section>
+<section id="problem" class="chapter" aria-labelledby="problem-heading">
+<h2 id="problem-heading" class="chapter-label">02 / Problem</h2>
+<div class="chapter-content"><p>The Northeast has many mountains. Bigger isn’t always better for a particular trip: terrain, travel time, atmosphere, and the people you’re skiing with all change what makes a mountain a good fit.</p>
+</div></section>
+<section id="learning" class="chapter" aria-labelledby="learning-heading">
+<h2 id="learning-heading" class="chapter-label">03 / What we learned</h2>
+<div class="chapter-content"><p>Skiers don’t think in filters. They describe a trip: “good après, close to Saratoga.” The product needs to translate that intent without making people learn its data model.</p>
+
+
+</div></section>
+<section id="decision" class="chapter" aria-labelledby="decision-heading">
+<h2 id="decision-heading" class="chapter-label">04 / Key decision</h2>
+<div class="chapter-content"><p>I rejected letting the model recommend mountains from memory. Instead, the model translates a request into supported criteria. Application code applies those criteria to the catalog, ranks eligible mountains, and explains each recommendation using matched attributes.</p>
+<figure class="ai-search-workflow ai-workflow-horizontal" id="ai-search-workflow" aria-labelledby="ai-workflow-heading">
+  <h4 id="ai-workflow-heading">My AI search workflow / From a skier’s question to a mountain shortlist</h4>
+  <div class="ai-workflow-scroll" tabindex="0" role="region" aria-label="AI search workflow; scroll horizontally to explore"><ol class="ai-workflow-stages" aria-label="AI search stages">
+    <li><div class="ai-stage">Describe the ideal ski day</div><span class="ai-flow-arrow" aria-hidden="true">→</span></li>
+    <li><div class="ai-stage">Interpret preferences with AI</div><span class="ai-flow-arrow" aria-hidden="true">→</span></li>
+    <li class="ai-criteria-stage"><div class="ai-stage">Check required criteria against resort data</div><span class="ai-flow-arrow" aria-hidden="true">→</span>
+      <aside class="ai-unsupported" aria-label="Unsupported request branch">
+        <span class="ai-branch-arrow" aria-hidden="true">↓</span>
+        <div class="ai-unsupported-box"><strong>Unsupported criteria</strong><span class="ai-branch-inline-arrow" aria-hidden="true">→</span><span>Explain the limitation and offer another way to explore</span></div>
+      </aside>
+    </li>
+    <li><div class="ai-stage">Rank eligible mountains with application rules</div><span class="ai-flow-arrow" aria-hidden="true">→</span></li>
+    <li><div class="ai-stage">Explain the matches</div></li>
+  </ol></div>
+  
+</figure>
+
+<p>AI interprets what the skier wants. Application rules determine which mountains qualify and how they rank; the interface explains the results and data limitations.</p>
+</div></section>
+<section id="design" class="chapter" aria-labelledby="design-heading">
+<h2 id="design-heading" class="chapter-label">05 / Design</h2>
+<div class="chapter-content"><div class="screen-grid"><figure class="evidence phone"><h3>Explore</h3>
+<a href="assets/case-study-layout/traverse-1.png" target="_blank" rel="noopener"><span class="traverse-phone-frame"><img src="assets/case-study-layout/traverse-1.png" alt="Browse mountain facts and editorial context." loading="lazy" width="390" height="800"></span></a><figcaption>Browse mountain facts and editorial context. <a href="assets/case-study-layout/traverse-1.png" target="_blank" rel="noopener">Enlarge ↗</a></figcaption></figure>
+<figure class="evidence phone"><h3>Compare</h3>
+<a href="assets/case-study-layout/traverse-2.png" target="_blank" rel="noopener"><span class="traverse-phone-frame"><img src="assets/case-study-layout/traverse-2.png" alt="Align terrain, access, and trip details across selected mountains." loading="lazy" width="390" height="800"></span></a><figcaption>Align terrain, access, and trip details across selected mountains. <a href="assets/case-study-layout/traverse-2.png" target="_blank" rel="noopener">Enlarge ↗</a></figcaption></figure>
+<figure class="evidence phone"><h3>Details</h3>
+<a href="assets/case-study-layout/traverse-3.png" target="_blank" rel="noopener"><span class="traverse-phone-frame"><img src="assets/case-study-layout/traverse-3.png" alt="Read the character and tradeoffs behind the numbers." loading="lazy" width="390" height="800"></span></a><figcaption>Read the character and tradeoffs behind the numbers. <a href="assets/case-study-layout/traverse-3.png" target="_blank" rel="noopener">Enlarge ↗</a></figcaption></figure>
+<figure class="evidence phone illustrative-query"><h3>Illustrative query</h3>
+<a href="assets/traverse/askdemo-trimmed.gif" aria-haspopup="dialog"><img src="assets/traverse/askdemo-trimmed.gif" alt="On the Traverse natural-language search demo for a skier’s request" loading="lazy" width="400" height="771"></a>
+<figcaption>An explanation of the architecture, not a captured model response. <a href="assets/traverse/askdemo-trimmed.gif" aria-haspopup="dialog">Enlarge ↗</a></figcaption></figure>
+</div></div></section>
+<section id="outcome" class="chapter" aria-labelledby="outcome-heading">
+<h2 id="outcome-heading" class="chapter-label">06 / Outcome</h2>
+<div class="chapter-content">
+<p>Building an AI-powered interface introduced a new design challenge: <strong>How do we know whether the recommendations are actually good?</strong></p>
+<p>To answer that, I developed an evaluation framework to measure recommendation quality, reliability, and user experience.</p>
+<figure class="evaluation-scorecard" aria-labelledby="evaluation-scorecard-heading">
+<h3 id="evaluation-scorecard-heading">AI Recommendation Quality</h3>
+<dl class="evaluation-metrics">
+<div><dt>Intent accuracy</dt><dd>Does Ask correctly interpret what the skier is looking for?</dd><dd><strong>Illustrative target:</strong> Correctly interpret the skier’s intent.</dd></div>
+<div><dt>Constraint adherence</dt><dd>Do recommendations respect requirements such as location, terrain, and family friendliness?</dd><dd><strong>Illustrative target:</strong> Respect all supported requirements; explain unsupported criteria.</dd></div>
+<div><dt>Recommendation relevance</dt><dd>Are the suggested mountains genuinely useful?</dd><dd><strong>Illustrative target:</strong> Suggest mountains that fit the skier’s needs.</dd></div>
+<div><dt>Failure recovery</dt><dd>Does the experience handle ambiguous requests, missing information, and unsuccessful searches gracefully?</dd><dd><strong>Illustrative target:</strong> Explain limitations and offer a useful next step.</dd></div>
+</dl>
+</figure>
+<p>The goal is to move beyond simply generating recommendations toward a repeatable process for measuring and improving their quality.</p>
+</div></section>
+<section id="reflection" class="chapter" aria-labelledby="reflection-heading">
+<h2 id="reflection-heading" class="chapter-label">07 / Reflection</h2>
+<div class="chapter-content"><p>Good recommendations start with good data. A polished answer cannot compensate for inconsistent facts, subjective ratings presented as measurements, or missing information.</p>
+<p>Next I would validate whether skiers understand why a recommendation matches, whether unsupported requests and unknown facts are clear, and whether they can compare and return to browsing without losing context.</p>
+</div></section>
+<nav class="project-nav" aria-label="Other projects"><a href="insurance.html">Soventure →</a><a href="cureatr.html">Cureatr →</a><a href="firstthought.html">FirstThought →</a></nav>
+</main>
+<footer class="wrap"><a href="index.html#work">All projects</a><a href="#top">Back to top ↑</a></footer>
+</body></html>

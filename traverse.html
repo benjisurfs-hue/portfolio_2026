@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Helping skiers find the right mountain for their trip — Benji Kim</title><meta name="description" content="The AI interprets the request. The catalog decides the answer. A product design case study by Benji Kim."><link rel="stylesheet" href="assets/traverse/fonts.css"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="case-study-layout.css"><link rel="stylesheet" href="onthetraverse-v2-workflow.css"><link rel="stylesheet" href="traverse-workflow-horizontal.css"><script src="case-study-layout.js" defer></script><link rel="stylesheet" href="image-modal.css">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Helping skiers find the right mountain for their trip — Benji Kim</title><meta name="description" content="The AI interprets the request. The catalog decides the answer. A product design case study by Benji Kim."><link rel="stylesheet" href="assets/traverse/fonts.css"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="case-study-layout.css"><link rel="stylesheet" href="onthetraverse-v2-workflow.css"><link rel="stylesheet" href="traverse-workflow-horizontal.css"><script src="case-study-layout.js" defer></script><link rel="stylesheet" href="image-modal.css"><link rel="stylesheet" href="traverse-evaluation.css">
 <script src="image-modal.js" defer></script>
 </head>
 
@@ -62,8 +62,19 @@
 </div></div></section>
 <section id="outcome" class="chapter" aria-labelledby="outcome-heading">
 <h2 id="outcome-heading" class="chapter-label">06 / Outcome</h2>
-<div class="chapter-content"><p>The catalog covers mountains across New York and Vermont. Feedback from 16 testers described the experience as easy to read and inviting, and said it helped them discover unfamiliar mountains.</p>
-<p><strong>This is early feedback, not validation.</strong> The product is pre-launch. Recommendation accuracy, usability across the full journey, and sustained use have not been established.</p>
+<div class="chapter-content">
+<p>Building an AI-powered interface introduced a new design challenge: <strong>How do we know whether the recommendations are actually good?</strong></p>
+<p>To answer that, I developed an evaluation framework to measure recommendation quality, reliability, and user experience.</p>
+<figure class="evaluation-scorecard" aria-labelledby="evaluation-scorecard-heading">
+<h3 id="evaluation-scorecard-heading">AI Recommendation Quality</h3>
+<dl class="evaluation-metrics">
+<div><dt>Intent accuracy</dt><dd>Does Ask correctly interpret what the skier is looking for?</dd><dd><strong>Illustrative target:</strong> Correctly interpret the skier’s intent.</dd></div>
+<div><dt>Constraint adherence</dt><dd>Do recommendations respect requirements such as location, terrain, and family friendliness?</dd><dd><strong>Illustrative target:</strong> Respect all supported requirements; explain unsupported criteria.</dd></div>
+<div><dt>Recommendation relevance</dt><dd>Are the suggested mountains genuinely useful?</dd><dd><strong>Illustrative target:</strong> Suggest mountains that fit the skier’s needs.</dd></div>
+<div><dt>Failure recovery</dt><dd>Does the experience handle ambiguous requests, missing information, and unsuccessful searches gracefully?</dd><dd><strong>Illustrative target:</strong> Explain limitations and offer a useful next step.</dd></div>
+</dl>
+</figure>
+<p>The goal is to move beyond simply generating recommendations toward a repeatable process for measuring and improving their quality.</p>
 </div></section>
 <section id="reflection" class="chapter" aria-labelledby="reflection-heading">
 <h2 id="reflection-heading" class="chapter-label">07 / Reflection</h2>

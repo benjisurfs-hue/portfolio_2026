@@ -1,0 +1,10 @@
+/* Reuse the case study’s typography, spacing, and color tokens. */
+.traverse-case .evaluation-scorecard{margin:32px 0;border-block:1px solid var(--line);padding:24px 0}
+.traverse-case .evaluation-scorecard h3{font:400 24px/1.3 'Varela Round',Arial,sans-serif;margin:0 0 12px;letter-spacing:0}
+.traverse-case .evaluation-scorecard h3 span{display:block;font-size:15px;line-height:1.5;margin-top:6px;color:var(--muted)}
+.traverse-case .evaluation-scorecard figcaption{font-size:15px;line-height:1.6;color:var(--muted)}
+.traverse-case .evaluation-metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 28px;margin:24px 0 0}
+.traverse-case .evaluation-metrics>div{border-top:1px solid var(--line);padding-top:18px;min-width:0}
+.traverse-case .evaluation-metrics dt{font-size:18px;line-height:1.5;font-weight:700}
+.traverse-case .evaluation-metrics dd{font-size:15px;line-height:1.6;margin:10px 0 0;color:var(--muted)}
+@media(max-width:480px){.traverse-case .evaluation-metrics{grid-template-columns:1fr}}

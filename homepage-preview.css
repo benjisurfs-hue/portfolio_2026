@@ -84,3 +84,8 @@
  .homepage-layout .personal-about>.eyebrow{margin:0}
  .homepage-layout .personal-about-media{gap:14px}
 }
+
+/* Industry experience beneath the homepage introduction. */
+.homepage-industries{display:flex;flex-wrap:wrap;gap:12px 26px;list-style:none;padding:0;margin:16px 0 0;color:var(--muted);font-size:15px;line-height:1.5}
+.homepage-industries li{margin:0}
+@media(max-width:760px){.homepage-industries{gap:10px 22px;font-size:14px}}
